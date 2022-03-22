@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Maqola(models.Model):
+    muallif = models.CharField(max_length=30)
     title = models.CharField(max_length=100)
     matn = models.TextField()
     time = models.DateTimeField(auto_now_add=True)
